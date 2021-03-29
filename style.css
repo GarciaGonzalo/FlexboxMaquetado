@@ -1,0 +1,494 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+[id]{
+    scroll-margin-top: 22ex;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 32px;
+}
+
+p{
+    font-size: 14px;
+}
+
+/* ----Header---- */
+
+.footer{
+        padding: 0% 8%;
+        min-height: 6vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #eeeeee;
+        color: rgb(80, 80, 80);
+}
+
+.titulares{
+    color: rgb(240, 240, 240);
+    padding: 0% 8%;
+    position: fixed;
+    top: 0px;
+    min-width: 100vw;
+    min-height: 10vh;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+.logoyBotonNavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: inherit;
+}
+
+.logoyBotonNavbar h2{
+    font-size: 18px;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 300px;
+    display: none;
+}
+
+#menu {
+    display: none;
+  }
+
+input:checked  ~ ul{
+    margin: 2% 0%;
+    display:block;
+}
+
+
+label{
+    font-size: 3vw;
+}
+
+li{
+    margin: 2% 0%;
+    list-style-type: none;
+    text-align: left;
+    flex-shrink: 1;
+    font-size: 14px;
+}
+
+li a{
+    color: rgb(240, 240, 240);
+}
+
+
+/* ----Main---- */
+
+
+main{
+    min-height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.hero-image{
+    background-image: url("https://placeimg.com/1440/720/animals");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.hero-image div{
+    color: rgb(240, 240, 240);;
+    background-color: rgba(0, 0, 0, 0.233);
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.iconosHome{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.iconosHome div{
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: 8% 0%;
+}
+
+.iconosHome div i{
+    margin-bottom: 5%;
+}
+
+     /* ---- SOBRE NOSOTROS --- */
+
+.sobreNosotros{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 3%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.sobreNosotrosTitulo{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10% 4%;
+}
+
+.sobreNosotrosTitulo p{
+    max-width: 600px;
+    font-size: 14px;
+    margin-top: 4%;
+    padding: 0% 4%;
+}
+
+.sobreNosotrosDescripcion{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+.sobreNosotrosItem{
+    height: 100%;
+    padding: 0% 4%;
+    margin-bottom: 4%;
+}
+
+.sobreNosotrosItem p{
+    margin: 4% 0%;
+    max-width: 400px;
+}
+
+.sobreNosotrosItem h2{
+    font-size: 24px;
+}
+
+    /*----SERVICIOS----*/
+    
+.servicios{
+    padding: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.servicios article{
+    padding: 1%;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 116, 0.137);
+    border-radius: 6%;
+    flex: 0 0 250px;
+    margin: 3% 2%;
+}
+
+.servicios article h4{
+    padding: 2%;
+    font-weight: 600;
+}
+
+.precios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: left;
+    padding: 4%;
+}
+
+.servicios article hr{
+    height: 1px;
+    border: 0;
+    background-color: #eed816;
+    margin-top: 2%;
+}
+
+.tarifa{
+    text-align: right;
+}
+
+.precios p{
+    flex-basis: 80px;
+    margin-top: 2%;
+}
+
+.serviciosTitulo{
+    padding: 2%;
+    margin-top: 6%;
+}
+
+/* ----Contacto---- */
+
+#contacto{
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+}
+
+#contacto h2{
+    padding-bottom: 2%;
+    margin: 6% 0%;
+    text-align: center;
+}
+
+.contactoBody{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 1%;
+}
+
+.form{
+    width: 80vw;
+    max-width: 400px;
+    height: 65vh;
+    padding: 3% 4%;
+    margin: 6% 0%;
+    border-radius: 6px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    order: 1;
+}
+
+.form h3{
+    font-weight: 600;
+}
+
+.form p{
+    color: rgb(63, 63, 63);
+    font-size: 12px;
+    margin-bottom: -2%;
+}
+
+.form input{
+    height: 12%;
+    padding: 2%;
+    border-radius: 6px;
+    border: 0;
+    font-size: 12px;
+}
+
+.form textArea{
+    height: 24%;
+    padding: 4% 2%;
+    border-radius: 6px;
+    border: 0;
+    font-size: 12px;
+}
+
+.form button{
+    height: 12%;
+    padding: 2%;
+    border-radius: 6px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #eed816;
+    
+}
+
+.infoBody{
+    margin: 0% 4%;
+}
+
+.mapa{
+    width: 80vw;
+}
+
+.infoContenedor{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info{
+    height: 20vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.info i{
+    margin-bottom: 10px;
+}
+
+.info p{
+    font-size: 12px;
+}
+
+    /*FOOTTER*/
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+    
+    [id]{
+        scroll-margin-top: 8ex;
+    }
+
+        /* ---- Navbar ---- */
+    
+    .titulares{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logoyBotonNavbar{
+        max-width: 50%;
+    }
+    
+    .navegacion{
+        max-width: 50%;
+        display: flex;
+    }
+
+    label{
+        display: none;
+    }
+
+    input:checked  ~ ul{
+        display:flex;
+        margin: 0% 0%;
+      }
+
+
+        /* --- MAIN --- */
+
+
+    .hero-image{
+        min-height: 60vh;
+    }
+
+    .iconosHome{
+        display: flex;
+        flex-flow: row nowrap;
+        min-height: 40vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .iconosHome div{
+        margin: 0% 0%;
+        width: 25%;
+    }
+
+        /* ---- Sobre nosotros ---- */
+
+    .sobreNosotrosTitulo{
+        padding: 4% 0%;
+        margin-bottom: 2%;
+    }
+    
+    .sobreNosotrosTitulo p{
+        padding: 0% 0%;
+        margin-top: 2%;
+    }
+    
+    .sobreNosotrosDescripcion{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobreNosotrosItem h2{
+        font-size: 24px;
+    }
+
+    .sobreNosotrosImagen{
+        margin: auto;
+    }
+
+    .sobreNosotrosItem p{
+        font-size: 16px;
+    }
+
+    .flex-order-1{
+        order: 1;
+    }
+    
+    /* ----SERVICIOS---- */
+
+    .serviciosTitulo{
+        margin-top: 0%;
+    }
+
+    .servicios article{
+        margin: 1% 2%;
+    }
+
+    .servicios article h4{
+        padding: 1%;
+    }
+
+    /* ----CONTACTO---- */
+    
+
+    #contacto h2{
+        margin: 0% 0% 2%;
+    }
+
+    .form{
+        min-width: 300px;
+        width: 30vw;
+        padding: 2%;
+        margin: 0%;
+        order: 0;
+    }
+
+    .form h3{
+        margin-top: -2%;
+    }
+
+    .form p{
+        margin-top: -2%;
+    }
+    
+    .mapa{
+        min-width: 380px;
+        width: 40vw;
+    }
+    
+
+}

@@ -1,0 +1,40 @@
+@import 'mixins';
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+[id]{
+    scroll-margin-top: 22ex;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+body{
+    @include flexContainer(column);
+}
+
+h2{
+    font-size: 32px;
+}
+
+p{
+    font-size: 14px;
+}
+
+@media (min-width: 769px){
+    [id]{
+        scroll-margin-top: 8ex;
+    }
+}

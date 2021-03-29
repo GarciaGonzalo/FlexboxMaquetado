@@ -1,0 +1,115 @@
+@import 'mixins';
+
+#contacto{
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    
+    h2{
+        padding-bottom: 2%;
+        margin: 6% 0%;
+        text-align: center;
+    }
+}
+
+.contactoBody{
+    @include flexContainer(row, wrap, space-evenly, flex-start);
+    margin-bottom: 1%;
+}
+
+.form{
+    @include flexContainer(column, nowrap, space-between);
+    width: 80vw;
+    max-width: 400px;
+    height: 65vh;
+    padding: 3% 4%;
+    margin: 6% 0%;
+    border-radius: 6px;
+    background-color: #eeeeee;
+    order: 1;
+    
+    h3{
+        font-weight: 600;
+    }
+    p{
+        color: rgb(63, 63, 63);
+        font-size: 12px;
+        margin-bottom: -2%;
+    }
+    input{
+        height: 12%;
+        padding: 2%;
+        border-radius: 6px;
+        border: 0;
+        font-size: 12px;
+    }
+    textArea{
+        height: 24%;
+        padding: 4% 2%;
+        border-radius: 6px;
+        border: 0;
+        font-size: 12px;
+    }
+    button{
+        height: 12%;
+        padding: 2%;
+        border-radius: 6px;
+        border: 0;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #eed816; 
+    }
+}
+
+.infoBody{
+    margin: 0% 4%;
+}
+
+.mapa{
+    width: 80vw;
+}
+
+.infoContenedor{
+    @include flexContainer(row, nowrap, space-evenly);
+}
+
+.info{
+    @include flexContainer(column, nowrap, center);
+    text-align: center;
+    height: 20vh;
+    
+    i{
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    #contacto h2{
+        margin: 0% 0% 2%;
+    }
+
+    .form{
+        min-width: 300px;
+        width: 30vw;
+        padding: 2%;
+        margin: 0%;
+        order: 0;
+        
+        h3{
+            margin-top: -2%;
+        }
+        p{
+            margin-top: -2%;
+        }
+    }
+    
+    .mapa{
+        min-width: 380px;
+        width: 40vw;
+    }
+
+}

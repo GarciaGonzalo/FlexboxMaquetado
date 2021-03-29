@@ -1,0 +1,55 @@
+@import 'mixins';
+
+main{
+    min-height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.hero-image{
+    background-image: url("https://placeimg.com/1440/720/animals");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    
+    div{
+        color: rgb(240, 240, 240);;
+        background-color: rgba(0, 0, 0, 0.233);
+        min-height: inherit;
+        font-size: 5vw;
+        @include flexContainer(row, nowrap, center, center);
+        text-align: center;
+    }
+}
+
+.iconosHome{
+    @include flexContainer(column, wrap, center, center);
+    text-align: center;
+    
+    div{
+        @include flexContainer(column, nowrap, center, center);
+        text-align: center;
+        min-height: inherit;
+        width: 50%;
+        margin: 8% 0%;
+        
+        i{
+            margin-bottom: 5%;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-image{
+        min-height: 60vh;
+    }
+
+    .iconosHome{
+        @include flexContainer(row, nowrap, space-evenly, center);
+        min-height: 40vh;
+        
+        div{
+            margin: 0% 0%;
+            width: 25%;
+        }
+    }
+
+}

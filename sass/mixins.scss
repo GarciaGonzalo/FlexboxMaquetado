@@ -1,0 +1,16 @@
+@mixin flexContainer (
+    $flex-direction: row, 
+    $flex-wrap: nowrap, 
+    $justify-content: flex-start, 
+    $align-items: stretch)
+{
+
+    display: flex;
+    flex-flow: $flex-direction $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin flexItems ($flex-grow: 0, $flex-shrink: 1, $flex-basis: auto) {
+    flex: $flex-grow $flex-shrink $flex-basis;
+}

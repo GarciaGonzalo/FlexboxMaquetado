@@ -1,0 +1,14 @@
+@import 'mixins';
+
+.footer{
+    @include flexContainer(row, nowrap, space-between);
+    align-items: center;
+    padding: 0% 8%;
+    min-height: 6vh;
+    background-color: #eeeeee;
+    color: rgb(80, 80, 80);
+}
+
+
+
+

@@ -1,0 +1,77 @@
+@import 'mixins';
+
+.sobreNosotros{
+    @include flexContainer(column, nowrap, flex-start, center);
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 3%;
+}
+
+.sobreNosotrosTitulo{
+    @include flexContainer(column, nowrap, center, center);
+    text-align: center;
+    padding: 10% 4%;
+    
+    p{
+        max-width: 600px;
+        font-size: 14px;
+        margin-top: 4%;
+        padding: 0% 4%;
+    }
+}
+
+
+.sobreNosotrosDescripcion{
+    @include flexContainer(column, nowrap, flex-start, center);
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+.sobreNosotrosItem{
+    height: 100%;
+    margin-bottom: 4%;
+    padding: 0% 4%;
+    
+    p{
+        margin: 4% 0%;
+        max-width: 400px;
+    }
+    h2{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* ---- Sobre nosotros ---- */
+
+    .sobreNosotrosTitulo{
+        padding: 4% 0%;
+        margin-bottom: 2%;
+        p{
+            padding: 0% 0%;
+            margin-top: 2%;
+        }
+    } 
+
+    .sobreNosotrosDescripcion{
+        @include flexContainer(row, nowrap, space-between, center);
+        text-align: center;
+    }
+
+    .sobreNosotrosItem h2{
+        font-size: 24px;
+    }
+
+    .sobreNosotrosImagen{
+        margin: auto;
+    }
+
+    .sobreNosotrosItem p{
+        font-size: 16px;
+    }
+
+    .flex-order-1{
+        order: 1;
+    }
+
+}
