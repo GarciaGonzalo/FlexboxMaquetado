@@ -1,4 +1,4 @@
-@import 'mixins';
+@use 'mixins';
 
 .sobreNosotros{
     @include flexContainer(column, nowrap, flex-start, center);

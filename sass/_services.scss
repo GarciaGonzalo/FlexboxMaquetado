@@ -1,4 +1,4 @@
-@import 'mixins';
+@use 'mixins';
 
 .servicios{
     @include flexContainer(row, wrap, space-evenly);

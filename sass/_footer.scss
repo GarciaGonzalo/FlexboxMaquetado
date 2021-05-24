@@ -1,4 +1,4 @@
-@import 'mixins';
+@use 'mixins';
 
 .footer{
     @include flexContainer(row, nowrap, space-between);
